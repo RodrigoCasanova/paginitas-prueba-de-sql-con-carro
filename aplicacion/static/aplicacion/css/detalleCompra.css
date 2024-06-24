@@ -1,0 +1,134 @@
+/* detalleCompra.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+.product-image {
+    width: 50px;
+    height: 50px;
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quantity-control .quantity {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    margin: 0 5px;
+    text-align: center;
+    width: 40px;
+}
+
+.quantity-control .increment,
+.quantity-control .decrement {
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+}
+
+.quantity-control .increment:hover,
+.quantity-control .decrement:hover {
+    background-color: #0056b3;
+}
+
+.delete {
+    background-color: transparent;
+    border: none;
+    color: #dc3545;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.delete i {
+    font-size: 18px;
+}
+
+tfoot {
+    background-color: #f9f9f9;
+}
+
+tfoot td {
+    padding: 15px;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.action-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+.action-button:hover {
+    background-color: #0056b3;
+}
+
+#discountCode {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+#applyDiscountBtn {
+    padding: 8px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#applyDiscountBtn:hover {
+    background-color: #218838;
+}

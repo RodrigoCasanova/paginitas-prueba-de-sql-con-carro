@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle de Compra</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Font Awesome para los iconos -->
+    <link rel="stylesheet" href="{% static 'aplicacion/css/detalleCompra.css' %}"> 
+</head>
+
+<body>
+    <div class="container">
+        <h1>Detalle de Compra</h1>
+        <p><strong>Código de Pedido:</strong> #123456</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Imagen</th>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                    <th>Precio Unitario (CLP)</th>
+                    <th>Total (CLP)</th>
+                    <th>Eliminar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Las filas se llenarán dinámicamente -->
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3" style="text-align: right;"><strong>Código de Descuento:</strong></td>
+                    <td colspan="2">
+                        <input type="text" id="discountCode" placeholder="Ingrese código">
+                        <button id="applyDiscountBtn" onclick="applyDiscount()">Aplicar Descuento</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="text-align: right;"><strong>Total:</strong></td>
+                    <td id="totalPrice">$0</td>
+                    <td></td>
+                </tr>
+            </tfoot>
+        </table>
+        <div class="action-buttons">
+            <a href="{% url 'TiendaOnline' %}"><button class="action-button">Volver a la Tienda</button></a>
+            <a href="{% url 'Envio' %}"><button id="comprobarEnvio" class="action-button">Comprobar Envío</button></a>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <!-- Font Awesome JS para los iconos -->
+    <script src="{% static 'aplicacion/js/detalleCompra.js' %}"></script>
+</body>
+
+</html>

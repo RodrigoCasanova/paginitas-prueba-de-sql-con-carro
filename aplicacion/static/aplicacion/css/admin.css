@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.admin-card {
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.admin-card h2 {
+    margin-bottom: 10px;
+}
+
+.admin-card p {
+    margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .admin-card {
+        padding: 15px;
+    }
+}
+.economic-indicators {
+    margin-top: 30px; /* Ajusta el margen superior según sea necesario */
+    text-align: center; /* Centra el contenido */
+}
+
+.economic-indicators h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.economic-indicators .card {
+    display: inline-block;
+    margin: 0 10px; /* Espacio entre cada tarjeta */
+    width: 200px; /* Ancho de cada tarjeta */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.economic-indicators .card .card-header {
+    background-color: #007bff; /* Color de fondo del encabezado */
+    color: #fff; /* Color del texto del encabezado */
+    font-size: 16px;
+    padding: 8px;
+    border-radius: 5px 5px 0 0;
+}
+
+.economic-indicators .card .card-body {
+    font-size: 14px;
+}
